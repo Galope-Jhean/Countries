@@ -1,5 +1,48 @@
+#root{
+  --bg-dark-theme: hsl(207, 26%, 17%);
+}
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body{
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+header{
+  display: flex;
+  padding: 30px;
+  justify-content: space-between;
+  box-shadow: 0px -35px 15px 25px rgba(0, 0, 0, 0.50);
+}
+
+.darkMode{
+  background-color: var(--bg-dark-theme);
+  color: white;
+}
+
+.darkMode .themeToggle{
+  color: white;
+}
+
+.darkMode .themeToggle img {
+  filter: invert(99%) sepia(2%) saturate(983%) hue-rotate(239deg) brightness(117%) contrast(96%);
+}
+
+.themeToggle{
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: bold;
+  background: none;
+  border: none;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.themeToggle img{
+  width: 25px;
+  vertical-align: middle;
+  padding-right: 10px;
 }

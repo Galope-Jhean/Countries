@@ -1,16 +1,28 @@
-import { useState } from 'react'
+import { createContext, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import { Routes, Route } from 'react-router-dom'
 import Header from './components/Header'
+import Main from './components/Main'
+
+export const AppData = createContext();
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [theme, setTheme] = useState({
+    darkMode: true
+  })
 
   return (
-    <Routes>
-      <Route path='/' element={<Header/>}/>
-    </Routes>
+    <AppData.Provider value={[theme, setTheme]}>
+      <Routes>
+        <Route path='/' element={
+          <>
+            <Header/>
+            <Main/>
+          </>
+        }/>
+      </Routes>
+    </AppData.Provider>
   )
 }
 
