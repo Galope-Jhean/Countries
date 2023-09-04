@@ -19,7 +19,7 @@ const Header = () => {
     }
 
     return (
-        <header className={darkMode ? "darkMode" : ""}>
+        <header className={darkMode ? "darkModeElement" : ""}>
             <h3>Where in the world?</h3>
             <button className='themeToggle' onClick={toggleDarkMode}>
                 <img src={darkMode ? shadedMoon : unshadedMoon} alt="moon-icon"/>
