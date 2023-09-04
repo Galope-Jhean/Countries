@@ -1,14 +1,16 @@
 import flag from '../assets/images/de.svg'
 
-const Card = () => {
+
+
+const Card = ({Name, Population, Region, Capital}) => {
     return (
         <div className="card">
             <img src={flag} alt=""/>
             <div className="details">
-                <h3>Germany</h3>
-                <span className='detail-stats'><strong>Population:</strong> 81,770,900</span>
-                <span className='detail-stats'><strong>Region:</strong> Europe</span>
-                <span className='detail-stats'><strong>Capital:</strong> Berlin</span>
+                <h3>{Name}</h3>
+                <span className='detail-stats'><strong>Population:</strong> {Population}</span>
+                <span className='detail-stats'><strong>Region:</strong> {Region}</span>
+                <span className='detail-stats'><strong>Capital:</strong> {Capital}</span>
             </div>
         </div>
     )

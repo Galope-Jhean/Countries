@@ -205,5 +205,26 @@ header{
   margin-bottom: 5px;
 }
 
+@media (min-width: 800px) {
+
+  body{
+    height: 100vh;
+  }
+
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .cardContainer {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+    padding: 40px;
+  }
+
+}
+
 
 
