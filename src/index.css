@@ -181,12 +181,25 @@ header{
   justify-content: flex-start;
   min-height: 100vh;
   gap: 50px;
+  flex-wrap: wrap;
+}
+
+.links{
+  text-decoration: none;
+  color: black;
+}
+
+.darkModeLink{
+  text-decoration: none;
+  color: white;
 }
 
 
 .card{
   width: 250px;
+  min-height: 300px; 
   box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.50);
+  overflow: hidden; 
 }
 
 .card:last-child{
@@ -198,7 +211,8 @@ header{
 }
 
 .card img {
-  width: 100%;
+  width: 100%; 
+  height: auto;
 }
 
 .card .details{
@@ -215,6 +229,87 @@ header{
 .detail-stats{
   font-size: 0.8rem;
   margin-bottom: 5px;
+}
+
+.country{
+  height: 100vh;
+}
+
+.back{
+  display: flex;
+  text-decoration: none;
+  width: 150px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+}
+
+.back:hover{
+  cursor: pointer;
+}
+
+.back img{
+  width: 20px;
+}
+
+.back-btn{
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 10px;
+  background-color: none;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+.button-container{
+  display: flex;
+  flex-direction: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px -10px rgba(0, 0, 0, 0.50);
+}
+
+.darkModeElement .back, .darkModeElement .back-btn{
+  background-color: var(--bg-dark-element);
+}
+
+.image{
+  width: 200px;
+}
+
+.details-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+}
+
+.country-flag {
+  width: 300px; 
+}
+
+.country-flag img {
+  width: 100%;
+}
+
+.country-details{
+  display: grid;
+  margin-top: 50px;
+  width: 300px;
+}
+
+.country-details h2{
+  margin-bottom: 20px;
+}
+
+.newSection{
+  margin-bottom: 40px;
 }
 
 @media (min-width: 800px) {

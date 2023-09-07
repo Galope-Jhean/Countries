@@ -36,6 +36,7 @@ const Main = () => {
     const cards = filterBySearch.map((country, index) => (
         <Card
           key={index}
+          darkMode={darkMode}
           Name={country.name.common}
           Flag={country.flags.svg}
           Population={country.population.toLocaleString("en-US")}
