@@ -1,8 +1,13 @@
-# React + Vite
+# Countries Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview:
+The Countries Application is a web-based platform designed to provide information about countries worldwide. Users can explore various details about countries, including their populations, currencies, languages, and more.
 
-Currently, two official plugins are available:
+## Features:
+- **Country Information:** View detailed information about countries, including their name, population, capital, currencies, languages, and more.
+- **Dark Mode:** View the application in a theme you prefer.
+- **Search Functionality:** Easily search for specific countries using the search bar.
+- **Responsive Design:** The application is optimized for various devices, ensuring a seamless user experience across desktops, tablets, and smartphones.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Contact:
+For any inquiries or support, please contact drakekhendrick@gmail.com
